@@ -8,6 +8,7 @@ function Nav() {
             <a href=""> Скилы </a>
             <a href=""> Проекты </a>
             <a href=""> Контакты </a>
+
         </div>
     )
 }
