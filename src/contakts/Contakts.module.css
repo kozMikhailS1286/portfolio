@@ -1,0 +1,32 @@
+.contactsBlock {
+    height: 20vh;
+    background-color: #ffd4f0;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.contactsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.inputBlock {
+    border: 1px solid;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+input {
+    margin: 0px 0px 10px 0px;
+    background-color: #a8a5a5;
+}
+
+textarea {
+    background-color: #a8a5a5;
+}
+
+button {
+    background-color: #a8a0a0;
+}

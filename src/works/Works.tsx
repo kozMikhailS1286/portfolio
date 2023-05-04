@@ -10,10 +10,10 @@ function Works() {
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <h2 className={style.title}> My works </h2>
                 <div className={style.works}>
-                    <Work title={"JS"}
+                    <Work title={"Project name1"}
                            description={"Description1"}
                     />
-                    <Work title={"HTML & CSS"}
+                    <Work title={"Project name2"}
                            description={"Description2"}
                     />
                 </div>

@@ -7,9 +7,41 @@
     text-align: center;
 }
 
-.icon {
-    height: 60px;
-    width: 60px;
-    background-color: #eeeef5;
+.container {
+    position: relative;
+    width: 100%;
 }
 
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container .btn:hover {
+    background-color: black;
+}
+
+.description {
+    background-color: #a8a5a5;
+    margin: 10px;
+}
+
+span {
+    background-color: #a8a5a5;
+    margin: 10px;
+}
