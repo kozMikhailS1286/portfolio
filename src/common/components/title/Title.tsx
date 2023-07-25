@@ -1,11 +1,13 @@
 import React from 'react'
 import style from './Title.module.css';
 
-
-function Title() {
+type TitlePropsType = {
+    text: string
+}
+function Title(props: TitlePropsType) {
     return (
         <div className={style.title}>
-            <h2> Projects </h2>
+            <h2> {props.text} </h2>
         </div>
     )
 }
