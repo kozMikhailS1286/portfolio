@@ -1,0 +1,81 @@
+@import '../../common/styles/sass/variables';
+@import './../../common/styles/sass/mixins';
+
+.work {
+    width: 250px;
+    background-color: $bgSecondColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    .image {
+        width: 450px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        ::before {
+            position: absolute;
+            content: '';
+            background-color: black;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.4;
+        }
+        .container img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: $primaryColor;
+    color: $textColor;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container .btn:hover {
+    background-color: black;
+}
+
+
+
+.projectInfo {
+    padding: 25px 20px;
+    background-color: $bgSecondColor;
+    .projectTitle {
+        @include text($TitleFontFamily, 16px, 1.2);
+        letter-spacing: 1px;
+        margin: 0 0 5px;
+    }
+    .description {
+        @include text($TextFontFamily, 12px, 1.8);
+        font-weight: 400;
+    }
+}
+
+
+
